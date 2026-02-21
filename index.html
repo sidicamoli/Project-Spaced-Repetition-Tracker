@@ -1,8 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spaced Repetition Tracker</title>
     <script type="module" src="script.mjs"></script>
   </head>
   <body>
+    <main>
+      <h1>Spaced Repetition Tracker</h1>
+
+      <section aria-labelledby="user-heading">
+        <h2 id="user-heading">User Selection</h2>
+        <p>
+          <label for="user-select">Choose a user to view their agenda:</label>
+        </p>
+        <p>
+          <select id="user-select">
+            <option value="">Select a user...</option>
+          </select>
+        </p>
+      </section>
+
+      <section aria-labelledby="agenda-heading">
+        <h2 id="agenda-heading">Revision Agenda</h2>
+        <ul id="topics" aria-live="polite" aria-label="Revision agenda"></ul>
+      </section>
+
+      <section aria-labelledby="form-heading">
+        <h2 id="form-heading">Add New Topic</h2>
+        <form id="topic-form">
+          <p>
+            <label for="title">Topic name:</label>
+          </p>
+          <p>
+            <input type="text" id="title" name="title" required aria-required="true">
+          </p>
+          <p>
+            <label for="date">Start date:</label>
+          </p>
+          <p>
+            <input type="date" id="date" name="date" required aria-required="true">
+          </p>
+          <p>
+            <button type="submit">Add Topic</button>
+          </p>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
