@@ -1,7 +1,13 @@
 {
-  "name": "project-spaced-repetition",
+  "name": "spaced-repetition-tracker",
   "version": "1.0.0",
+  "description": "At Code Your Future, we like to use a learning technique called spaced repetition.",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "node common.test.mjs"
-  }
+    "test": "node --test *.test.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
