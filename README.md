@@ -2,7 +2,7 @@
 
 A Vanilla JavaScript web app that helps users track topics for revision using the spaced repetition technique. Topics are reviewed over increasing time gaps: one week, one month, three months, six months, and one year from the chosen start date.
 
-**Live site:** [your deployed URL here]
+**Live site:** https://projectt-spaced-repitition-tracker.netlify.app/
 
 ---
 
